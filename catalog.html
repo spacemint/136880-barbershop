@@ -5,7 +5,7 @@
     <title>Каталог средств для ухода</title>
   </head>
   <body>
-    <header>
+    <header class="main-header">
       <div class="container">
         <div class="logo">
           <img src="#" width="100" height="100" alt="Barbershop Borodinski Logo">
@@ -34,7 +34,7 @@
         </div>
       </div>
     </header>
-    <main>
+    <main class="container">
       <h1>Средства для&nbsp;ухода</h1>
       <nav class="breadcrumbs">
         <ul>
@@ -49,123 +49,115 @@
           </li>
         </ul>
       </nav>
-      <div class="item-filter">
-        <form class="item-filter-form" action="https://echo.htmlacademy.ru" method="post">
-          <h2>Производители:</h2>
-          <div class="item-filter-form-group">
-            <div class="item-filter-form-option">
-              <input type="checkbox" name="manufacturer" value="baxter-of-california" id="baxter-of-california" checked>
-              <label for="baxter-of-california">Baxter of&nbsp;California</label>
+      <div class="filter-container">
+        <form class="filter" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="filter-manufacturers">
+            <h2>Производители:</h2>
+            <div class="filter-group">
+              <div class="filter-option">
+                <input type="checkbox" name="manufacturer" value="baxter-of-california" id="baxter-of-california" checked>
+                <label for="baxter-of-california">Baxter of&nbsp;California</label>
+              </div>
+              <div class="filter-option">
+                <input type="checkbox" name="manufacturer" value="mr-natty" id="mr-natty">
+                <label for="mr-natty">Mr&nbsp;Natty</label>
+              </div>
+              <div class="filter-option">
+                <input type="checkbox" name="manufacturer" value="suavecito" id="suavecito" checked>
+                <label for="suavecito">Suavecito</label>
+              </div>
+              <div class="filter-option">
+                <input type="checkbox" name="manufacturer" value="malin-goetz" id="malin-goetz">
+                <label for="malin-goetz">Malin+Goetz</label>
+              </div>
+              <div class="filter-option">
+                <input type="checkbox" name="manufacturer" value="murrays" id="murrays">
+                <label for="murrays">Murray's</label>
+              </div>
+              <div class="filter-option">
+                <input type="checkbox" name="manufacturer" value="american-crew" id="american-crew" checked>
+                <label for="american-crew">American Crew</label>
+              </div>
             </div>
-            <div class="item-filter-form-option">
-              <input type="checkbox" name="manufacturer" value="mr-natty" id="mr-natty">
-              <label for="mr-natty">Mr&nbsp;Natty</label>
+          </fieldset>
+          <fieldset class="filter-types">
+            <h2>Группы товаров:</h2>
+            <div class="filter-group">
+              <div class="filter-option">
+                <input type="radio" name="item-group" value="shaving-accessories" id="shaving-accessories">
+                <label for="shaving-accessories">Бритвенные принадлежности</label>
+              </div>
+              <div class="filter-option">
+                <input type="radio" name="item-group" value="means-for-care" id="means-for-care" checked>
+                <label for="means-for-care">Средства для&nbsp;ухода</label>
+              </div>
+              <div class="filter-option">
+                <input type="radio" name="item-group" value="accessories" id="accessories">
+                <label for="accessories">Аксессуары</label>
+              </div>
             </div>
-            <div class="item-filter-form-option">
-              <input type="checkbox" name="manufacturer" value="suavecito" id="suavecito" checked>
-              <label for="suavecito">Suavecito</label>
-            </div>
-            <div class="item-filter-form-option">
-              <input type="checkbox" name="manufacturer" value="malin-goetz" id="malin-goetz">
-              <label for="malin-goetz">Malin+Goetz</label>
-            </div>
-            <div class="item-filter-form-option">
-              <input type="checkbox" name="manufacturer" value="murrays" id="murrays">
-              <label for="murrays">Murray's</label>
-            </div>
-            <div class="item-filter-form-option">
-              <input type="checkbox" name="manufacturer" value="american-crew" id="american-crew" checked>
-              <label for="american-crew">American Crew</label>
-            </div>
-          </div>
-          <h2>Группы товаров:</h2>
-          <div class="item-filter-form-group">
-            <div class="item-filter-form-option">
-              <input type="radio" name="item-group" value="shaving-accessories" id="shaving-accessories">
-              <label for="shaving-accessories">Бритвенные принадлежности</label>
-            </div>
-            <div class="item-filter-form-option">
-              <input type="radio" name="item-group" value="means-for-care" id="means-for-care" checked>
-              <label for="means-for-care">Средства для&nbsp;ухода</label>
-            </div>
-            <div class="item-filter-form-option">
-              <input type="radio" name="item-group" value="accessories" id="accessories">
-              <label for="accessories">Аксессуары</label>
-            </div>
-          </div>
+          </fieldset>
           <button type="submit" class="btn">Показать</button>
         </form>
       </div>
       <div class="item-cards">
         <article class="item-card">
-          <figure class="item-card-photo">
-            <img src="#" width="100" height="100" alt="Набор для путешествий Baxter of California">
-          </figure>
-          <span class="item-card-name">Набор для&nbsp;путешествий
-            <span class="item-card-name item-card-manufacturer">&laquo;Baxter of&nbsp;California&raquo;</span>
-          </span>
+          <img src="#" width="100" height="100" alt="Набор для путешествий Baxter of California">
+          <p class="item-card-name">Набор для&nbsp;путешествий
+            <span class="item-card-manufacturer">&laquo;Baxter of&nbsp;California&raquo;</span>
+          </p>
           <div class="item-card-purchase">
-            <span class="item-card-price">2&nbsp;900&nbsp;руб.</span>
+            <span>2&nbsp;900&nbsp;руб.</span>
+            <a class="btn" href="#">Купить</a>
+          </div>
+        </article>
+        <article class="item-card">
+          <img src="#" width="100" height="100" alt="Увлажняющий кондиционер Baxter of California">
+          <p class="item-card-name">Увлажняющий кондиционер
+            <span class="item-card-manufacturer">&laquo;Baxter of&nbsp;California&raquo;</span>
+          </p>
+          <div class="item-card-purchase">
+            <span>750&nbsp;руб.</span>
+            <a class="btn" href="#">Купить</a>
+          </div>
+        </article>
+        <article class="item-card">
+          <img src="#" width="100" height="100" alt="Гель для волос Suavecito">
+          <p class="item-card-name">Гель для&nbsp;волос
+            <span class="item-card-manufacturer">&laquo;Suavecito&raquo;</span>
+          </p>
+          <div class="item-card-purchase">
+            <span>290&nbsp;руб.</span>
+            <a class="btn" href="#">Купить</a>
+          </div>
+        </article>
+        <article class="item-card">
+          <img src="#" width="100" height="100" alt="Глина для укладки волос American Crew">
+          <p class="item-card-name">Глина для&nbsp;укладки волос
+            <span class="item-card-manufacturer">&laquo;American Crew&raquo;</span>
+          </p>
+          <div class="item-card-purchase">
+            <span>500&nbsp;руб.</span>
+            <a class="btn" href="#">Купить</a>
+          </div>
+        </article>
+        <article class="item-card">
+          <img src="#" width="100" height="100" alt="Гель для волос American Crew">
+          <p class="item-card-name">Гель для&nbsp;волос
+            <span class="item-card-manufacturer">&laquo;American Crew&raquo;</span>
+          </p>
+          <div class="item-card-purchase">
+            <span>300&nbsp;руб.</span>
             <a class="btn" href="#">Купить</a>
           </div>
         </article>
         <article class="item-card-card">
-          <figure class="item-card-photo">
-            <img src="#" width="100" height="100" alt="Увлажняющий кондиционер Baxter of California">
-          </figure>
-          <span class="item-card-name">Увлажняющий кондиционер
-            <span class="item-card-name item-card-manufacturer">&laquo;Baxter of&nbsp;California&raquo;</span>
-          </span>
+          <img src="#" width="100" height="100" alt="Набор для бритья Baxter of California">
+          <p class="item-card-name">Набор для&nbsp;бритья
+            <span class="item-card-manufacturer">&laquo;Baxter of&nbsp;California&raquo;</span>
+          </p>
           <div class="item-card-purchase">
-            <span class="item-card-price">750&nbsp;руб.</span>
-            <a class="btn" href="#">Купить</a>
-          </div>
-        </article>
-        <article class="item-card">
-          <figure class="item-card-photo">
-            <img src="#" width="100" height="100" alt="Гель для волос Suavecito">
-          </figure>
-          <span class="item-card-name">Гель для&nbsp;волос
-            <span class="item-card-name item-card-manufacturer">&laquo;Suavecito&raquo;</span>
-          </span>
-          <div class="item-card-purchase">
-            <span class="item-card-price">290&nbsp;руб.</span>
-            <a class="btn" href="#">Купить</a>
-          </div>
-        </article>
-        <article class="item-card">
-          <figure class="item-card-photo">
-            <img src="#" width="100" height="100" alt="Глина для укладки волос American Crew">
-          </figure>
-          <span class="item-card-name">Глина для&nbsp;укладки волос
-            <span class="item-card-name item-card-manufacturer">&laquo;American Crew&raquo;</span>
-          </span>
-          <div class="item-card-purchase">
-            <span class="item-card-price">500&nbsp;руб.</span>
-            <a class="btn" href="#">Купить</a>
-          </div>
-        </article>
-        <article class="item-card">
-          <figure class="item-card-photo">
-            <img src="#" width="100" height="100" alt="Гель для волос American Crew">
-          </figure>
-          <span class="item-card-name">Гель для&nbsp;волос
-            <span class="item-card-name item-card-manufacturer">&laquo;American Crew&raquo;</span>
-          </span>
-          <div class="item-card-purchase">
-            <span class="item-card-price">300&nbsp;руб.</span>
-            <a class="btn" href="#">Купить</a>
-          </div>
-        </article>
-        <article class="item-card-card">
-          <figure class="item-card-photo">
-            <img src="#" width="100" height="100" alt="Набор для бритья Baxter of California">
-          </figure>
-          <span class="item-card-name">Набор для&nbsp;бритья
-            <span class="item-card-name item-card-manufacturer">&laquo;Baxter of&nbsp;California&raquo;</span>
-          </span>
-          <div class="item-card-purchase">
-            <span class="item-card-price">3&nbsp;900&nbsp;руб.</span>
+            <span>3&nbsp;900&nbsp;руб.</span>
             <a class="btn" href="#">Купить</a>
           </div>
         </article>
@@ -187,13 +179,15 @@
         </ul>
       </nav>
     </main>
-    <footer>
+    <footer class="main-footer">
       <div class="container">
         <section class="footer-contacts">
-          Барбершоп «Бородинский»<br>
-          Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-          <a href="#">Как нас найти?</a><br>
-          Телефон: +7 (812) 666-02-66
+          <p>
+            Барбершоп «Бородинский»<br>
+            Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+            <a href="#">Как нас найти?</a><br>
+            Телефон: +7 (812) 666-02-66
+          </p>
         </section>
         <section class="footer-social">
           <p>Давайте дружить!</p>
