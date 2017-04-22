@@ -1,0 +1,17 @@
+body {
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: 700;
+  font-family: "PT Sans Narrow";
+}
+
+.item-header, .index-content-title {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.fullcard-composition h2 {
+  font-size: 24px;
+  line-height: 30px;
+}
